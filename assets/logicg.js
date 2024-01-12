@@ -84,7 +84,7 @@ function colission(){
         var platformright = platformleft+260;
 
         if(platformtop <= characterbottom && platformtop+15>=characterbottom
-            && (characterright>=platformleft-40 && characterleft<platformright)){
+            && (characterright>=platformleft-40 && characterleft<platformright+40)){
             Y_Speed = 0;
             is_colission = true;
             character.style.top = platformtop-CHARACTER_HEIGHT+"px";
